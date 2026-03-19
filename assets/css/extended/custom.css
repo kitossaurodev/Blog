@@ -1,0 +1,1149 @@
+/* Fonte — Courier Prime (monospace serif, Google Fonts) */
+/* Loaded via <link> in extend_head.html */
+
+/* ==============================================
+   POST BANNER (Notion-style)
+   ============================================== */
+
+.post-banner {
+  height: 280px;
+  overflow: hidden;
+  margin: -20px -40px 1rem -40px;
+}
+
+.post-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+  display: block;
+}
+
+/* ==============================================
+   SIDEBAR LAYOUT
+   ============================================== */
+
+/* Esconder a navbar original do PaperMod */
+.header {
+  display: none;
+}
+
+/* Wrapper principal: sidebar + conteúdo lado a lado */
+.site-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar fixa à esquerda */
+.sidebar {
+  width: 220px;
+  min-width: 220px;
+  background: var(--theme);
+  border-right: 1px solid var(--border);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 100;
+  transition: transform 0.3s ease;
+}
+
+/* Ocultar âncoras (#) nos títulos */
+.anchor {
+  display: none !important;
+}
+
+/* Conteúdo principal */
+.site-content {
+  margin-left: 220px;
+  margin-right: 220px;
+  flex: 1;
+  min-width: 0;
+}
+
+/* Sidebar direita (Arquivo) */
+.sidebar-right {
+  width: 220px;
+  min-width: 220px;
+  background: var(--theme);
+  border-left: 1px solid var(--border);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.sidebar-right-inner {
+  padding: 20px 15px;
+}
+
+.sidebar-inner {
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.sidebar-inner .sidebar-theme-toggle {
+  margin-top: auto;
+}
+
+/* Título do site na sidebar */
+.sidebar-header {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--border);
+}
+
+.sidebar-title {
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+  display: block;
+  line-height: 1.3;
+}
+
+.sidebar-title:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.sidebar-description {
+  font-size: 0.75rem;
+  color: var(--secondary);
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+/* Alternador de tema (fundo da sidebar) */
+.sidebar-theme-toggle {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+.sidebar-theme-toggle button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--secondary);
+  padding: 4px;
+}
+
+.sidebar-theme-toggle button:hover {
+  color: var(--primary);
+}
+
+/* Seções da sidebar */
+.sidebar-section {
+  margin-bottom: 18px;
+}
+
+.sidebar-section-title {
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 8px;
+  text-transform: none;
+}
+
+/* Links de navegação */
+.sidebar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  margin-bottom: 4px;
+}
+
+.sidebar-nav a {
+  font-size: 0.8rem;
+  color: var(--secondary);
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav a.active {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* Arquivo (posts recentes) */
+.sidebar-archive {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-archive li {
+  margin-bottom: 6px;
+}
+
+.sidebar-archive a {
+  font-size: 0.78rem;
+  color: var(--secondary);
+  text-decoration: none;
+  display: block;
+  line-height: 1.4;
+}
+
+.sidebar-archive a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.sidebar-date {
+  font-size: 0.7rem;
+  color: var(--secondary);
+  opacity: 0.7;
+}
+
+/* Tags na sidebar (inline) */
+.sidebar-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+}
+
+.sidebar-tags li {
+  margin-bottom: 0;
+}
+
+/* ==============================================
+   ESTILOS DE TEXTO (preservados)
+   ============================================== */
+
+/* Layout completo — ponta a ponta */
+.main {
+  max-width: 100%;
+  padding: 20px 40px;
+}
+
+.post-content {
+  max-width: 100%;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  text-align: justify;
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+.post-header {
+  max-width: 100%;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+}
+
+/* Remover max-width do container principal */
+.container {
+  max-width: 100%;
+}
+
+footer {
+  max-width: 100%;
+}
+
+/* Texto justificado e fonte serifada no corpo geral */
+body {
+  font-family: 'Courier Prime', 'Courier New', monospace;
+}
+
+.post-content p,
+.post-content li {
+  text-align: justify;
+}
+
+.post-content blockquote {
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-style: italic;
+}
+
+/* Referências numéricas em azul */
+.ref {
+  color: #1a6fb5;
+  font-weight: 600;
+}
+
+/* ==============================================
+   FIGURAS / IMAGENS NOS POSTS
+   ============================================== */
+
+.post-content figure.post-figure {
+  margin: 20px 0;
+  max-width: 100%;
+}
+
+.post-content figure.post-figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-content figure.post-figure figcaption {
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 0.85rem;
+  color: var(--secondary);
+  margin-top: 8px;
+  font-style: italic;
+}
+
+/* ==============================================
+   NOTION-STYLE CALLOUT BOXES
+   ============================================== */
+
+.callout {
+  background: rgba(128, 128, 128, 0.06);
+  border-left: 3px solid var(--border);
+  padding: 16px 20px;
+  margin: 20px 0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.callout figure.post-figure {
+  margin: 10px 0;
+}
+
+/* Callout flutuante à esquerda (Imagem 1) */
+.callout.float-left {
+  float: left;
+  max-width: 36%;
+  margin: 5px 25px 15px 0;
+}
+
+/* Callout flutuante à direita (Imagem 10) */
+.callout.float-right {
+  float: right;
+  max-width: 42%;
+  margin: 5px 0 15px 25px;
+}
+
+/* Callouts menores dentro de modais */
+.modal-content .callout.float-left,
+.modal-content .callout.float-right {
+  max-width: 28%;
+}
+
+/* Figura flutuante à esquerda */
+.post-content figure.post-figure.float-left {
+  float: left;
+  max-width: 38%;
+  margin: 5px 25px 15px 0;
+}
+
+/* Figura flutuante à direita */
+.post-content figure.post-figure.float-right {
+  float: right;
+  max-width: 38%;
+  margin: 5px 0 15px 25px;
+}
+
+/* ==============================================
+   GRIDS DE IMAGENS (lado a lado)
+   ============================================== */
+
+.image-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 20px 0;
+  clear: both;
+}
+
+.image-row-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin: 20px 0;
+  clear: both;
+}
+
+.image-row-2 figure.post-figure,
+.image-row-3 figure.post-figure {
+  margin: 0;
+  max-width: 100%;
+}
+
+/* Callouts lado a lado */
+.callout-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 20px 0;
+  clear: both;
+}
+
+/* Grid 3 colunas para NOTA 3 */
+.nota3-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1fr;
+  gap: 20px;
+  margin: 16px 0;
+  align-items: start;
+}
+
+.nota3-grid figure.post-figure {
+  margin: 0;
+}
+
+/* ==============================================
+   TOGGLES COLAPSÁVEIS (details/summary)
+   ============================================== */
+
+details.nota-toggle {
+  margin: 20px 0;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  clear: both;
+}
+
+details.nota-toggle > summary {
+  cursor: pointer;
+  padding: 10px 16px;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--primary);
+  background: rgba(128, 128, 128, 0.06);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+details.nota-toggle > summary::before {
+  content: '▶';
+  font-size: 0.7rem;
+  transition: transform 0.2s;
+}
+
+details.nota-toggle[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+details.nota-toggle > summary::-webkit-details-marker {
+  display: none;
+}
+
+details.nota-toggle .toggle-content {
+  padding: 16px 20px;
+}
+
+/* Parágrafos com indent */
+p.indent {
+  text-indent: 3em;
+}
+
+/* Side-by-side figures com callout ao lado do texto */
+.text-with-sidebar {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.text-with-sidebar .sidebar-fig {
+  align-self: start;
+}
+
+/* Emails (callout) à esquerda + texto à direita */
+.emails-text-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: 20px 0;
+  clear: both;
+}
+
+.emails-text-row .emails-col {
+  margin: 0;
+}
+
+.emails-text-row .emails-col blockquote {
+  font-size: 0.88rem;
+  margin: 0 0 12px 0;
+  padding: 8px 12px;
+  border-left: 3px solid var(--border);
+}
+
+.emails-text-row .text-col p.indent {
+  text-indent: 2em;
+}
+
+/* ==============================================
+   RESPONSIVO — grids colapsam em telas pequenas
+   ============================================== */
+@media (max-width: 900px) {
+  .image-row-2,
+  .image-row-3,
+  .callout-row,
+  .nota3-grid,
+  .text-with-sidebar,
+  .emails-text-row {
+    grid-template-columns: 1fr;
+  }
+
+  .callout.float-left,
+  .callout.float-right {
+    float: none;
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  .post-content figure.post-figure.float-left,
+  .post-content figure.post-figure.float-right {
+    float: none;
+    max-width: 100%;
+    margin: 20px 0;
+  }
+}
+
+/* Botão "Modo artigo" */
+.modo-artigo-btn {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 2px 10px;
+  vertical-align: middle;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 0.8rem;
+  color: #1a6fb5;
+  background: transparent;
+  border: 1px solid #1a6fb5;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.modo-artigo-btn:hover {
+  background: #1a6fb5;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ==============================================
+   ARTIGO VIEWER (paginas A4)
+   ============================================== */
+
+/* Body standalone para artigo — sem sidebars */
+body.artigo-body {
+  margin: 0;
+  padding: 0;
+  background: #d6d6d6;
+}
+
+[data-theme="dark"] body.artigo-body {
+  background: #2a2a2a;
+}
+
+/* Toolbar flutuante no topo */
+.artigo-toolbar {
+  position: static;
+  background: rgba(50, 50, 50, 0.92);
+  padding: 8px 24px;
+  text-align: left;
+  width: 210mm;
+  border-radius: 4px 4px 0 0;
+}
+
+.artigo-back-btn {
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 0.85rem;
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.artigo-back-btn:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Remover padding do main quando contem artigo */
+.main:has(.artigo-viewer) {
+  padding: 0;
+  margin: 0;
+}
+
+.artigo-viewer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0 60px 0;
+  min-height: 100vh;
+}
+
+.artigo-title {
+  display: none;
+}
+
+.artigo-pages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.artigo-page {
+  width: 210mm;
+  height: 297mm;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+}
+
+[data-theme="dark"] .artigo-page {
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.6);
+}
+
+/* Conteudo academico dentro das paginas */
+.page-inner {
+  padding: 20mm 18mm 15mm 18mm;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 10pt;
+  line-height: 1.4;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Numero de pagina */
+.page-number {
+  position: absolute;
+  bottom: 8mm;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 9pt;
+  color: #000;
+}
+
+/* ---- Cabecalho do artigo (titulo, autor, data) ---- */
+.paper-header {
+  text-align: center;
+  margin-bottom: 16pt;
+  padding-bottom: 0;
+  flex-shrink: 0;
+}
+
+.paper-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17pt;
+  font-weight: bold;
+  line-height: 1.3;
+  margin: 0 0 14pt 0;
+  color: #000;
+}
+
+.paper-author {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 12pt;
+  margin: 0 0 2pt 0;
+  color: #000;
+}
+
+.paper-affiliation {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 9pt;
+  font-style: italic;
+  margin: 0 0 2pt 0;
+  color: #333;
+}
+
+.paper-date {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 8.5pt;
+  margin: 8pt 0 0 0;
+  color: #555;
+}
+
+/* ---- Abstract (caixa com bordas superior e inferior) ---- */
+.paper-abstract {
+  border-top: 1.5pt solid #000;
+  border-bottom: 1pt solid #000;
+  padding: 8pt 0;
+  margin-bottom: 14pt;
+  font-size: 8.5pt;
+  line-height: 1.35;
+  text-align: justify;
+  color: #000;
+  flex-shrink: 0;
+}
+
+.paper-abstract p {
+  margin: 0 0 4pt 0;
+  color: #000;
+  text-indent: 0;
+}
+
+.paper-abstract .abstract-label {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.8pt;
+  font-size: 8pt;
+}
+
+.paper-keywords {
+  font-size: 8.5pt;
+  color: #000;
+  margin: 6pt 0 0 0;
+}
+
+.paper-keywords .kw-label {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5pt;
+  font-size: 8pt;
+}
+
+/* ---- Corpo do artigo (duas colunas) ---- */
+.paper-body {
+  column-count: 2;
+  column-gap: 6mm;
+  column-fill: auto;
+  column-rule: none;
+  text-align: justify;
+  color: #000;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  font-size: 9.5pt;
+  line-height: 1.38;
+  flex: 1;
+  overflow: hidden;
+}
+
+.paper-body h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 10.5pt;
+  font-weight: bold;
+  margin: 10pt 0 5pt 0;
+  column-span: none;
+  color: #000;
+}
+
+.paper-body h2:first-child {
+  margin-top: 0;
+}
+
+.paper-body p {
+  margin: 0 0 5pt 0;
+  text-indent: 1.5em;
+  color: #000;
+}
+
+.paper-body p:first-child {
+  text-indent: 0;
+}
+
+.paper-body h2 + p {
+  text-indent: 0;
+}
+
+.paper-body ul {
+  margin: 3pt 0 5pt 0;
+  padding-left: 1.5em;
+  color: #000;
+}
+
+.paper-body li {
+  margin-bottom: 2pt;
+  font-size: 9pt;
+  color: #000;
+}
+
+/* Referencia inline [1] */
+.paper-body .ref-num {
+  color: #000;
+  font-size: 8pt;
+  vertical-align: super;
+  line-height: 0;
+}
+
+/* ---- Responsivo para artigo ---- */
+@media (max-width: 850px) {
+  .artigo-page {
+    width: 95vw;
+    max-width: 210mm;
+    height: auto;
+    min-height: 297mm;
+  }
+}
+
+/* Botão "Saber mais" */
+.saber-mais-btn {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 2px 10px;
+  vertical-align: middle;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 0.8rem;
+  color: #fff;
+  background: #1a6fb5;
+  border: 1px solid #1a6fb5;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.saber-mais-btn:hover {
+  background: #155d99;
+  border-color: #155d99;
+  color: #fff;
+}
+
+/* ==============================================
+   MODAL
+   ============================================== */
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: var(--theme);
+  color: var(--primary);
+  max-width: 750px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 30px 35px;
+  border-radius: 6px;
+  position: relative;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 0.92rem;
+  line-height: 1.75;
+  text-align: justify;
+}
+
+.modal-content h3 {
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.modal-content ul {
+  padding-left: 20px;
+}
+
+.modal-content li {
+  margin-bottom: 8px;
+}
+
+/* Modal largo para NOTA 3 */
+.modal-content.modal-wide {
+  max-width: 95%;
+  width: 95%;
+  max-height: 90vh;
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  color: var(--secondary);
+  cursor: pointer;
+  line-height: 1;
+}
+
+.modal-close:hover {
+  color: var(--primary);
+}
+
+/* ==============================================
+   MODO DE EDIÇÃO
+   ============================================== */
+
+/* Wrapper do conteúdo (position relative para o botão) */
+.post-content-wrapper {
+  position: relative;
+}
+
+/* Botão lápis — canto superior direito */
+.edit-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--theme);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 8px;
+  cursor: pointer;
+  color: var(--secondary);
+  opacity: 0.5;
+  transition: opacity 0.2s, color 0.2s, border-color 0.2s;
+  z-index: 10;
+  line-height: 1;
+}
+
+.edit-btn:hover {
+  opacity: 1;
+  color: #1a6fb5;
+  border-color: #1a6fb5;
+}
+
+/* Toolbar fixa no topo durante edição */
+.edit-toolbar {
+  position: fixed;
+  top: 0;
+  left: 220px;
+  right: 220px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 6px 16px;
+  background: #1e1e2e;
+  border-bottom: 1px solid #333;
+  z-index: 999;
+  flex-wrap: wrap;
+}
+
+.edit-toolbar-btn {
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #cdd6f4;
+  font-size: 0.85rem;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  padding: 4px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.edit-toolbar-btn:hover {
+  background: #313244;
+  border-color: #45475a;
+}
+
+.edit-toolbar-btn:active {
+  background: #45475a;
+}
+
+/* Botão salvar — destaque verde */
+.edit-toolbar-save {
+  background: #1a6fb5;
+  color: #fff;
+  border-color: #1a6fb5;
+  font-weight: 700;
+}
+
+.edit-toolbar-save:hover {
+  background: #155d99;
+  border-color: #155d99;
+}
+
+.edit-toolbar-save:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+/* Botão cancelar — destaque vermelho sutil */
+.edit-toolbar-cancel {
+  color: #f38ba8;
+  border-color: transparent;
+}
+
+.edit-toolbar-cancel:hover {
+  background: rgba(243, 139, 168, 0.15);
+  border-color: #f38ba8;
+}
+
+/* Separador */
+.edit-toolbar-sep {
+  width: 1px;
+  height: 20px;
+  background: #45475a;
+  margin: 0 6px;
+}
+
+/* Indicador visual no conteúdo editável */
+.post-content[contenteditable="true"] {
+  outline: 2px dashed #1a6fb5;
+  outline-offset: 8px;
+  border-radius: 4px;
+  min-height: 200px;
+}
+
+/* ==============================================
+   RESPONSIVO — sidebar colapsa em telas pequenas
+   ============================================== */
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .sidebar-inner {
+    padding: 15px 20px;
+  }
+
+  .site-content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .sidebar-right {
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    border-left: none;
+    border-top: 1px solid var(--border);
+  }
+
+  .site-wrapper {
+    flex-direction: column;
+  }
+
+  .main {
+    padding: 15px 20px;
+  }
+
+  .edit-toolbar {
+    left: 0;
+    right: 0;
+  }
+
+}
+
+/* ==============================================
+   MODAL DE IMAGEM (lightbox)
+   ============================================== */
+.image-lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  cursor: zoom-out;
+}
+
+.image-lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.image-lightbox .lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.post-content img {
+  cursor: zoom-in;
+}
+
+/* ==============================================
+   ÁREA DE COMENTÁRIOS
+   ============================================== */
+.comments-section {
+  margin-top: 40px;
+}
+
+.comments-section h3 {
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.comment-form {
+  margin-bottom: 30px;
+}
+
+.comment-input {
+  width: 100%;
+  padding: 12px;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--entry);
+  color: var(--primary);
+  resize: vertical;
+}
+
+.comment-submit {
+  margin-top: 10px;
+  padding: 8px 20px;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 0.9rem;
+  background: var(--primary);
+  color: var(--theme);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comment-submit:hover {
+  opacity: 0.85;
+}
+
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.comment {
+  padding: 15px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--entry);
+}
+
+.comment-header {
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+}
+
+.comment-date {
+  color: var(--secondary);
+  margin-left: 10px;
+  font-size: 0.8rem;
+}
+
+.comment-body {
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin: 0;
+}

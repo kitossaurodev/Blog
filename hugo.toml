@@ -1,0 +1,53 @@
+baseURL = "https://<username>.github.io/StatisticsReal/"
+languageCode = "pt-br"
+title = "StatisticsReal"
+theme = "PaperMod"
+defaultContentLanguage = "pt-br"
+[pagination]
+  pagerSize = 10
+
+[params]
+  env = "production"
+  author = "Questioner"
+  description = "blog de opinião e questionamento científico"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowShareButtons = false
+  ShowCodeCopyButtons = true
+  disqusShortname = "<your-disqus-shortname>"
+  comments = true
+
+  [params.homeInfoParams]
+    Title = "StatisticsReal"
+    Content = "blog de opinião e questionamento científico"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "index.xml"
+
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    name = "Categorias"
+    url = "/categories/"
+    weight = 2
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+  [[menu.main]]
+    name = "Sobre"
+    url = "/about/"
+    weight = 4
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

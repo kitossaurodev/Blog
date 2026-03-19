@@ -1,0 +1,18 @@
+<aside class="sidebar-right">
+  <div class="sidebar-right-inner">
+    <!-- Arquivo (posts recentes) -->
+    <div class="sidebar-section">
+      <h3 class="sidebar-section-title">Arquivo</h3>
+      <ul class="sidebar-archive">
+        {{- range (where site.RegularPages "Section" "posts").ByDate.Reverse }}
+        {{- if not .Draft }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <span class="sidebar-date">{{ .Date.Format "Jan 2006" }}</span>
+        </li>
+        {{- end }}
+        {{- end }}
+      </ul>
+    </div>
+  </div>
+</aside>

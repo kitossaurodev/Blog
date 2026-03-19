@@ -1,0 +1,30 @@
+{{- if lt hugo.Version "0.146.0" }}
+{{- errorf "=> hugo v0.146.0 or greater is required for hugo-PaperMod to build " }}
+{{- end -}}
+
+<!DOCTYPE html>
+{{- $theme := site.Params.defaultTheme | default "auto" }}
+{{- if eq $theme "dark" }}
+<html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}" data-theme="dark">
+{{- else if eq $theme "light" }}
+<html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}" data-theme="light">
+{{- else }}
+<html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}" data-theme="auto">
+{{- end }}
+
+<head>
+    {{- partial "head.html" . }}
+</head>
+
+<body id="top" class="artigo-body">
+    <div class="artigo-viewer">
+        <div class="artigo-toolbar">
+            <a href="{{ .Site.BaseURL }}posts/o-cientista-que-desconhecia-o-metodo/" class="artigo-back-btn">&#8592; Voltar ao blog</a>
+        </div>
+        <div class="artigo-pages">
+            {{ .Content }}
+        </div>
+    </div>
+</body>
+
+</html>
