@@ -4,3 +4,4 @@ resources/
 *.tar.gz
 public
 exemples
+.github/workflows/
